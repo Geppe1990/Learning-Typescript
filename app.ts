@@ -1,23 +1,15 @@
-const person: {
-    name: string,
-    age: number,
-    hobbies: string[],
-    category: [number, string], //questa è una touple
-} = {
-    name: "Giuseppe",
-    age: 30,
-    hobbies: ["Sports", "Cooking"],
-    category: [2, "author"]
-};
-
-
-person.category[1] = "administrator"
-console.log(person.category)
-let favoriteActivities: string[]; //Array di stringhe
-let anyArray: any[]; //Array generico
-
-console.log(person.name)
-
-for (const hobby of person.hobbies) {
-    console.log(hobby.toUpperCase())
+function add(n1: number, n2:number): number {
+    return n1 + n2;
 }
+
+function printResult(num: number): void {
+    console.log("Result: " + num);
+}
+
+function returnNothing(): undefined {
+    console.log("I am returning undefined");
+    return;
+}
+
+printResult(add(5, 12));
+returnNothing();
